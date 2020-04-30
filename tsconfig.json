@@ -1,0 +1,9 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ES2020",
+        "watch": true,
+        "outFile": "js/main.js"
+    },
+    "files": ["ts/index.ts"]
+}
