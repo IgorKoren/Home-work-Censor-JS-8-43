@@ -1,14 +1,17 @@
-
-.container-fluid{
+.container-fluid {
     background-color: #EEEEEE;
 }
-.w-500px{
+
+.w-500px {
     min-width: 400px;
-    max-width: 50%; 
+    max-width: 50%;
 }
-.h200px{
+
+.h200px {
     height: 200px;
 }
-/* .marAutoTop{
-    margin:  auto auto;
-} */
+
+.m50 {
+    margin-bottom: 20Vh;
+}
+

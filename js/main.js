@@ -5,8 +5,8 @@ const addBtn = document.getElementById('addBtn');
 const resetBtn = document.getElementById('resetBtn');
 const inputText = document.getElementById('inputText');
 const cebsorBtn = document.getElementById('cebsorBtn');
-const forma = document.forms['forma'];
-console.log(forma);
+const forma = document.forms['forma1'];
+// console.log(forma);
 let arrBadWords = [];
 console.log(arrBadWords);
 resetBtn.addEventListener('click', function () {
@@ -29,12 +29,14 @@ cebsorBtn.addEventListener('click', function () {
         let myInputText = inputText.value;
         let newReplacesString = '';
         arrBadWords.forEach(function (value, index) {
-            console.log(value);
+            console.log(value + '  ------------ value');
             function changLet(s) {
-                let st = s.repeat(value.length);
+                let st = '';
+                st = s.repeat(value.length);
+                console.log('--------' + st);
                 return st;
             }
-            newReplacesString = myInputText.replace(new RegExp(value, "g"), changLet("*"));
+            newReplacesString = inputText.value.replace(new RegExp(value, "g"), changLet("*"));
         });
         inputText.value = newReplacesString;
     }
@@ -44,5 +46,5 @@ cebsorBtn.addEventListener('click', function () {
 });
 function renderBadWords(arrBadWords) {
     badWords.innerText = arrBadWords.join(', ');
-    console.log(badWords.innerText);
+    // console.log(badWords.innerText);
 }

@@ -6,61 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body>
-  <button id="addBtn">add</button>
-  <button id="resetBtn">reset</button>
-  <button id="cebsorBtn">cencor</button>
-  <button id="cebsorBtn" type="submit" class="btn btn-success mb-2 col">Cencor</button>
+<body class="d-flex flex-column ">
 
-    
-    <div class="container-fluid">
-        <div class="row ">
+    <div class="container-fluid m50">
+        <div class="row border">
             <div class="col p-3 text-center">
                 <h3>List of prohibited words:</h3>
             </div>
         </div>
     </div>
-    <div>
-        <div class="container w-500px  border border-primary col-md-6 col-sm-10 ">
-            <div class="row ">
-                <div class="col">
-                    <form id="forma">
-                        <div class="form-row mt-3">
-                            <div class="form-group">
-                                <h5 class="ml-1">Bad words:</h5>
-                            </div>
-                            <div class="form-group">
-                                <h5 id="badWords" class="ml-3 text-danger">
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <input type="text" id="inputBadWords" class="form-control" placeholder="Ведіть слова...">
-                            </div>
-                            <div class="form-group ">
-                                <button id="addBtn" type="submit" class="btn btn-warning mb-2 ml-2">Add</button>
-                            </div>
-                            <div class="form-group">
-                                <button id="resetBtn" type="submit" class="btn btn-danger mb-2  ml-2">Reset</button>
-                            </div>
+
+    <div id="flc" class="container w-500px  border col-md-6 col-sm-10  ">
+        <div class="row ">
+            <div class="col">
+                <form id="forma1" class="">
+                    <div class="form-row mt-3">
+                        <div class="form-group">
+                            <h5 class="ml-1">Bad words:</h5>
                         </div>
                         <div class="form-group">
-                            <textarea id="inputText" type="text" class="form-control" rows="3"  placeholder="Ведіть текст..."></textarea>
+                            <h5 id="badWords" class="ml-3 text-danger">
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <input type="text" id="inputBadWords" class="form-control" placeholder="Ведіть слова...">
+                        </div>
+                        <div class="form-group ">
+                            <button id="addBtn" type="button" class="btn btn-warning mb-2 ml-2">Add</button>
                         </div>
                         <div class="form-group">
-                            <button id="cebsorBtn" type="submit" class="btn btn-success mb-2 col">Cencor</button>
+                            <button id="resetBtn" type="button" class="btn btn-danger mb-2  ml-2">Reset</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="inputText" type="text" class="form-control" rows="3"
+                            placeholder="Ведіть текст..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button id="cebsorBtn" type="button" class="btn btn-success mb-2 col">Cencor</button>
+                    </div>
+
+                </form>
             </div>
         </div>
+    </div>
     </div>
 
 
